@@ -58,6 +58,9 @@ main {
   padding: 20px 0;
 }
 
+.main-left-header .menu {
+  padding-bottom: 20px;
+}
 .main-left-header .menu ul li:first-child a{
   color: white;
 }
@@ -77,25 +80,59 @@ main {
   padding-bottom: 10px;
 }
 
-.main-left-header i{
+.main-left-header .playlist {
+  padding-bottom: 20px;
+}
+.main-left-header .playlist i{
   font-size: 50px;
 }
 
-
+.main-left-header .playlist ul li {
+  display: inline;
+  vertical-align: middle;
+}
 /* / main-left-header */
 
-
+/* main-left-playlist */
 .main-left-playlist {
   min-height: 220px;
   flex-grow: 1;
   background-color: violet;
   overflow-y: auto;
 }
+/* / main-left-playlist */
 
+/* main-left-footer */
 .main-left-footer {
   height: 50px;
   background-color: red;
 }
+
+.main-left-footer-top img {
+  width: 15px;
+}
+
+.main-left-footer-top  ul li,
+.main-left-footer-bottom  ul li {
+  display: inline;
+  vertical-align: middle;
+}
+
+.main-left-footer-top::after {
+  content: '';
+  display: inline;
+  height: 4px;
+  width: 90%;
+  background-color: lightgrey;
+}
+
+.main-left-footer-bottom img {
+  width: 30px;
+  background-color: lightgrey;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+/* / main-left-footer */
 /* / main-left */
 
 /* main-right */
