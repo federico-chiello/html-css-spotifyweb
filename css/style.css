@@ -3,3 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: lightgreen;
+}
+
+/* main */
+main {
+
+}
+/* / main */
+
+/* footer */
+footer {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: blue;
+}
+/* / footer */
