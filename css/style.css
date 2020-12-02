@@ -38,6 +38,7 @@ main {
   min-height: 220px;
   flex-grow: 1;
   background-color: violet;
+  overflow-y: auto;
 }
 
 .main-left-footer {
