@@ -120,8 +120,8 @@ main {
 
 .main-left-footer-top::after {
   content: '';
-  display: inline;
-  height: 4px;
+  display: inline-block;
+  height: 1px;
   width: 90%;
   background-color: lightgrey;
 }
