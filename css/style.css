@@ -43,7 +43,20 @@ main {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 1;
   background-color: rgba(5, 5, 5, 0.81);
+  text-align: right;
+  line-height: 80px;
+  padding-right: 20px;
+}
+
+.call-to-action .btn {
+  color: white;
+  padding: 10px 30px;
+  border: 1px solid white;
+  border-radius: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 /* / main-right */
 
