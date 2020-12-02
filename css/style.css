@@ -32,6 +32,19 @@ main {
   width: calc(100% - 250px);
   background-color: grey;
 }
+
+.font_40 {
+  font-size: 40px;
+}
+
+.call-to-action {
+  width: calc(100% - 250px);
+  height: 80px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(5, 5, 5, 0.81);
+}
 /* / main-right */
 
 /* / main */
