@@ -11,6 +11,20 @@
   overflow: hidden;
 }
 
+/* classi riutilizzabili */
+a {
+  text-decoration: none;
+}
+
+.ms_white {
+  color: white;
+}
+
+.ms_grey {
+  color: lightgrey;
+}
+/* / classi riutilizzabili */
+
 /* main */
 main {
   width: 100%;
@@ -39,6 +53,10 @@ main {
   padding: 20px 0 20px 20px;
 }
 
+.main-left-header .menu ul li:first-child a{
+  color: white;
+}
+
 .main-left-header .menu ul li{
   padding-left: 20px;
 }
@@ -46,6 +64,7 @@ main {
 .main-left-header .menu img{
   width: 30px;
   vertical-align: middle;
+  padding-right: 5px;
 }
 /* / main-left-header */
 
