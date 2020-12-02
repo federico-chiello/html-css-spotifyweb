@@ -29,10 +29,20 @@ main {
   justify-content: space-between;
 }
 
+/* main-left-header */
 .main-left-header {
-  height: 80px;
   background-color: green;
 }
+
+.main-left-header .logo {
+  width: 70%;
+}
+
+.main-left-header .menu img{
+  width: 15%;
+  display: inline;
+}
+/* / main-left-header */
 
 .main-left-playlist {
   min-height: 220px;
