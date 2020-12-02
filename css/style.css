@@ -8,6 +8,7 @@
   height: 100vh;
   width: 100%;
   background-color: lightgreen;
+  overflow: hidden;
 }
 
 /* main */
@@ -31,6 +32,7 @@ main {
   height: 100%;
   width: calc(100% - 250px);
   background-color: grey;
+  overflow-y: scroll;
 }
 
 .font_40 {
