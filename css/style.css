@@ -111,6 +111,10 @@ main {
 /* / main-left-playlist */
 
 /* main-left-footer */
+.main-left-footer {
+  padding: 10px 0;
+}
+
 .main-left-footer-top img {
   width: 15px;
   margin-right: 10px;
@@ -123,13 +127,6 @@ main {
   width: 90%;
   background-color: lightgrey;
 }
-.main-left-footer-top {
-  padding-top: 10px;
-}
-
-.main-left-footer-bottom {
-  padding-bottom: 10px;
-}
 
 .main-left-footer-bottom img {
   width: 30px;
@@ -137,7 +134,6 @@ main {
   border: 1px solid white;
   border-radius: 50px;
 }
-
 /* / main-left-footer */
 /* / main-left */
 
