@@ -140,10 +140,32 @@ main {
   width: calc(100% - 250px);
   background-color: grey;
   overflow-y: scroll;
+  padding-top: 90px;
 }
 
 .font_40 {
   font-size: 40px;
+}
+
+.main-right .main-right-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  text-align: center;
+}
+
+.main-right .main-right-nav ul li {
+  height: 20px;
+  width: 20px;
+  background-color: blue;
+  display: inline;
+  margin-right: 20px;
+}
+
+.main-right .main-right-nav ul li a{
+  text-transform: uppercase;
 }
 
 .call-to-action {
