@@ -156,7 +156,7 @@ main {
 }
 
 /* main-right-nav */
-.main-right .main-right-nav {
+.main-right .main-right-nav ul{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -165,10 +165,8 @@ main {
 }
 
 .main-right .main-right-nav ul li {
-  height: 20px;
-  width: 20px;
   display: inline;
-  margin-right: 20px;
+  margin: 10px;
 }
 
 .main-right .main-right-nav ul li a{
@@ -202,6 +200,11 @@ main {
 .main-right-content {
   padding-top: 40px;
 }
+
+.main-right-content h1{
+  padding-bottom: 20px;
+}
+
 .main-right-content ul {
   display: flex;
   flex-direction: row;
@@ -213,6 +216,7 @@ main {
   width: 100px;
   background-color: blue;
   border: 1px solid white;
+  margin: 10px;
 }
 /* / main-right-content */
 /* / main-right */
