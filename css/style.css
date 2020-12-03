@@ -123,6 +123,13 @@ main {
   width: 90%;
   background-color: lightgrey;
 }
+.main-left-footer-top {
+  padding-top: 10px;
+}
+
+.main-left-footer-bottom {
+  padding-bottom: 10px;
+}
 
 .main-left-footer-bottom img {
   width: 30px;
