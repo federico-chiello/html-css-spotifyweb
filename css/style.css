@@ -95,7 +95,7 @@ main {
 
 /* main-left-playlist */
 .main-left-playlist {
-  min-height: 220px;
+  min-height: 200px;
   flex-grow: 1;
   background-color: violet;
   overflow-y: auto;
@@ -104,7 +104,6 @@ main {
 
 /* main-left-footer */
 .main-left-footer {
-  height: 50px;
   background-color: red;
 }
 
@@ -133,6 +132,15 @@ main {
   border-radius: 50px;
 }
 /* / main-left-footer */
+
+@media screen and (max-width: 578px) {
+  .main-left-header .menu ul li a{
+    display: none;
+  }
+  .main-left-header .menu ul li a img{
+    display: block;
+  }
+}
 /* / main-left */
 
 /* main-right */
