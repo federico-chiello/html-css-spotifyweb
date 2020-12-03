@@ -53,8 +53,13 @@ main {
   background-color: green;
 }
 
-.main-left-header .logo {
+.main-left-header .spotify .logo{
   width: 70%;
+  padding: 20px 0;
+}
+
+.main-left-header .spotify .logo-small{
+  width: 20%;
   padding: 20px 0;
 }
 
@@ -133,12 +138,31 @@ main {
 }
 /* / main-left-footer */
 
-@media screen and (max-width: 578px) {
-  .main-left-header .menu ul li a{
+@media screen and (min-width: 579px) {
+  .main-left-header .spotify .logo-small{
     display: none;
   }
-  .main-left-header .menu ul li a img{
-    display: block;
+}
+
+@media screen and (max-width: 578px) {
+  .main-left-header .logo{
+    display: none;
+  }
+
+  .main-left-header .menu ul li a span{
+    display: none;
+  }
+
+  .main-left-header .playlist{
+    display: none;
+  }
+
+  .main-left-playlist {
+    display: none;
+  }
+
+  .main-left-footer span{
+    display: none;
   }
 }
 /* / main-left */
