@@ -48,6 +48,10 @@ main {
   padding-left: 15px;
 }
 
+.main-left li a:hover {
+  opacity: 0.5;
+}
+
 /* main-left-header */
 .main-left-header .spotify .logo{
   width: 70%;
@@ -109,12 +113,7 @@ main {
 /* main-left-footer */
 .main-left-footer-top img {
   width: 15px;
-}
-
-.main-left-footer-top  ul li,
-.main-left-footer-bottom  ul li {
-  display: inline;
-  vertical-align: middle;
+  margin-right: 10px;
 }
 
 .main-left-footer-top::after {
@@ -131,6 +130,7 @@ main {
   border: 1px solid white;
   border-radius: 50px;
 }
+
 /* / main-left-footer */
 
 /* media query */
@@ -209,6 +209,12 @@ main {
   border-radius: 20px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 578px) {
+  .call-to-action {
+    width: calc(100% - 60px);
+  }
 }
 /* / main-right */
 
