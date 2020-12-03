@@ -39,6 +39,7 @@ main {
   height: calc(100% - 80px);
   background-color: violet;
   display: flex;
+  overflow: hidden;
 }
 
 /* main-left */
@@ -201,6 +202,18 @@ main {
 .main-right-content {
   padding-top: 40px;
 }
+.main-right-content ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main-right-content ul li{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  border: 1px solid white;
+}
 /* / main-right-content */
 /* / main-right */
 
@@ -210,9 +223,6 @@ main {
 footer {
   height: 80px;
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   background-color: blue;
 }
 /* / footer */
