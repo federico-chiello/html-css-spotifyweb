@@ -20,6 +20,10 @@ li {
   list-style: none;
 }
 
+h1, h2, h3 {
+  color: white;
+}
+
 .ms_white {
   color: white;
 }
@@ -150,6 +154,7 @@ main {
   font-size: 40px;
 }
 
+/* main-right-nav */
 .main-right .main-right-nav {
   display: flex;
   flex-direction: row;
@@ -161,7 +166,6 @@ main {
 .main-right .main-right-nav ul li {
   height: 20px;
   width: 20px;
-  background-color: blue;
   display: inline;
   margin-right: 20px;
 }
@@ -191,6 +195,13 @@ main {
   text-decoration: none;
   text-transform: uppercase;
 }
+/* / main-right-nav */
+
+/* main-right-content */
+.main-right-content {
+  padding-top: 40px;
+}
+/* / main-right-content */
 /* / main-right */
 
 /* / main */
