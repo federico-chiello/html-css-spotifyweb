@@ -176,6 +176,9 @@ main {
 footer {
   height: 80px;
   width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   background-color: blue;
 }
 /* / footer */
