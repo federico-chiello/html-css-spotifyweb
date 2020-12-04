@@ -216,7 +216,7 @@ main {
   flex-wrap: wrap;
 }
 .covers #recently ul li{
-  flex-basis: calc(100% / 8 - 15px);
+  flex-basis: calc(100% / 8);
   margin: 15px 10px 0 0;
   text-align: center;
 }
@@ -249,6 +249,30 @@ main {
   text-align: center;
 }
 /* / creato */
+
+/* artisti */
+.covers #artisti {
+  padding: 30px 0 0 20px;
+}
+
+.covers #artisti .image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.covers #artisti ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.covers #artisti ul li{
+  margin: 15px 10px 0 0;
+  text-align: center;
+}
+/* / artisti */
 /* / covers */
 /* / main-right */
 
