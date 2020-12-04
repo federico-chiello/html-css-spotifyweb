@@ -20,7 +20,7 @@ li {
   list-style: none;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   color: white;
 }
 
@@ -40,6 +40,10 @@ h1, h2, h3 {
 
 .float-left {
   float: left;
+}
+
+.float-right {
+  float: right;
 }
 /* / classi riutilizzabili */
 
@@ -235,13 +239,14 @@ main {
   flex-wrap: wrap;
 }
 .covers #recently ul li{
-  flex-basis: calc(100% / 8);
+  flex-basis: calc(100% / 8 - 10px);
   margin: 15px 10px 0 0;
   text-align: center;
 }
 
 .covers #recently  img{
-  width: 100%;
+  width: 150px;
+  height: 150px;
 }
 
 .covers #recently ul li .layover{
@@ -331,24 +336,33 @@ footer {
   justify-content: space-between;
 }
 
-.footer-left {
-  background-color: blue;
-}
-
+/* footer-left */
 .footer-left img {
   width: 50px;
   margin: 15px 10px;
 }
 
 .footer-left .brano {
-  margin-top: 20px;
+  margin: 15px 30px 0 0;
 }
 
+.footer-left .font {
+  line-height: 80px;
+  vertical-align: middle;
+}
 
+.footer-left .font a{
+  padding-right: 10px;
+}
+/* / footer-left */
+
+/* footer-center */
 
 .footer-center {
   background-color: pink;
 }
+
+/* / footer-center */
 
 .footer-right {
   background-color: green;
