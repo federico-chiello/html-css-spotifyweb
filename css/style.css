@@ -363,8 +363,13 @@ footer {
   text-align: center;
 }
 
+.footer-center ul {
+  margin-top: 10px;
+}
+
 .footer-center ul li {
   display: inline;
+  vertical-align: middle;
 }
 
 .footer-center ul li a{
@@ -374,6 +379,14 @@ footer {
 
 .footer-center ul li:nth-of-type(3) a{
   font-size: 30px;
+}
+
+.footer-center .first::after {
+  content: '';
+  display: inline-block;
+  height: 4px;
+  width: 40%;
+  background-color: lightgrey;
 }
 
 
