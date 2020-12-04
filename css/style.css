@@ -203,7 +203,7 @@ main {
 
 /* recently */
 .covers #recently {
-  padding: 10px;
+  padding-left: 20px;
 }
 
 .covers #recently h1{
@@ -216,8 +216,8 @@ main {
   flex-wrap: wrap;
 }
 .covers #recently ul li{
-  flex-basis: calc(100% / 6 - 15px);
-  margin: 15px 15px 0 0;
+  flex-basis: calc(100% / 8 - 15px);
+  margin: 15px 10px 0 0;
   text-align: center;
 }
 
@@ -228,7 +228,26 @@ main {
 /* / recently */
 
 /* creato */
+.covers #creato {
+  padding: 30px 0 0 20px;
+}
 
+.covers #creato .image img {
+  width: 150px;
+  height: 150px;
+}
+
+.covers #creato ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.covers #creato ul li{
+  margin: 15px 10px 0 0;
+  text-align: center;
+}
 /* / creato */
 /* / covers */
 /* / main-right */
