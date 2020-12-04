@@ -346,6 +346,10 @@ footer {
   margin: 15px 30px 0 0;
 }
 
+.footer-left .brano a:hover {
+  color: white;
+}
+
 .footer-left .font {
   line-height: 80px;
   vertical-align: middle;
@@ -354,11 +358,14 @@ footer {
 .footer-left .font a{
   padding-right: 10px;
 }
+
+.footer-left .font a:hover{
+  color:white;
+}
 /* / footer-left */
 
 /* footer-center */
 .footer-center {
-  background-color: pink;
   flex-grow: 1;
   text-align: center;
 }
@@ -386,10 +393,10 @@ footer {
   display: inline-block;
   height: 4px;
   width: 40%;
-  background-color: lightgrey;
+  border-radius: 5px;
+  background-color: #75787c;
+  margin: 0 30px;
 }
-
-
 /* / footer-center */
 
 .footer-right {
