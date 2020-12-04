@@ -240,7 +240,7 @@ main {
 }
 
 .covers #recently ul li .layover:hover {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .covers #recently ul li .layover i{
@@ -256,6 +256,7 @@ main {
 
 .covers #recently ul li .layover:hover i{
   display: block;
+  opacity: 1;
 }
 
 /* / recently */
@@ -308,14 +309,13 @@ main {
 /* / artisti */
 /* / covers */
 /* / main-right */
-
 /* / main */
 
 /* footer */
 footer {
   height: 80px;
   width: 100%;
-  background-color: blue;
+  background-color: #282828;
 }
 /* / footer */
 
