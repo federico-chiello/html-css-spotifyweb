@@ -54,7 +54,8 @@ main {
 }
 
 .main-left li a:hover {
-  opacity: 0.5;
+  opacity: 1;
+  color: white;
 }
 
 /* main-left-header */
@@ -71,9 +72,7 @@ main {
 .main-left-header .menu {
   padding-bottom: 20px;
 }
-.main-left-header .menu ul li:first-child a{
-  color: white;
-}
+
 
 .main-left-header .menu ul li {
   padding-bottom: 10px;
@@ -173,6 +172,11 @@ main {
   text-transform: uppercase;
 }
 
+.main-right li a:hover {
+  opacity: 1;
+  color: white;
+}
+
 .call-to-action {
   width: calc(100% - 250px);
   height: 80px;
@@ -193,6 +197,11 @@ main {
   border-radius: 20px;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all ;
+}
+
+.call-to-action .btn:hover a{
+  transform: scale(3);
 }
 /* / navbar */
 
@@ -221,10 +230,27 @@ main {
   text-align: center;
 }
 
-.covers #recently .image img{
-  width: 150px;
-  height: 150px;
+.covers #recently  img{
+  width: 100%;
 }
+
+.covers #recently ul li .layover{
+  width: 100%;
+  position: relative;
+}
+
+.covers #recently ul li .layover:hover {
+  opacity: 50%;
+}
+
+.covers #recently ul li .layover i{
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(- 50%; - 50%);
+}
+
 /* / recently */
 
 /* creato */
