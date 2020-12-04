@@ -245,10 +245,17 @@ main {
 
 .covers #recently ul li .layover i{
   font-size: 50px;
+  color: white;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(- 50%; - 50%);
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+
+.covers #recently ul li .layover:hover i{
+  display: block;
 }
 
 /* / recently */
