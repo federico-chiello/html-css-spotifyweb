@@ -357,9 +357,16 @@ footer {
 /* / footer-left */
 
 /* footer-center */
-
 .footer-center {
   background-color: pink;
+}
+
+.footer-center ul li {
+  display: inline;
+}
+
+.footer-center ul li a{
+  color: white;
 }
 
 /* / footer-center */
