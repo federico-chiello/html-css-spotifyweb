@@ -64,8 +64,14 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.main-left .main-left-header .spotify,
+.main-left .main-left-playlist,
+.main-left .main-left-footer {
   padding-left: 15px;
 }
+
 
 .main-left li a:hover {
   opacity: 1;
@@ -87,9 +93,20 @@ main {
   padding-bottom: 20px;
 }
 
-
 .main-left-header .menu ul li {
   padding-bottom: 10px;
+}
+
+.main-left-header .menu ul li a{
+  padding-left: 15px;
+}
+
+.main-left-header .menu ul li:first-child {
+  border-left: 3px solid #adff2f;
+}
+
+.main-left-header .playlist {
+  padding-left: 15px;
 }
 
 .main-left-header .menu img{
@@ -182,6 +199,16 @@ main {
   margin: 10px;
 }
 
+.main-right nav ul li:first-child a::after {
+  content: '';
+  display: inline-block;
+  height: 2px;
+  width: 40%;
+  border-radius: 5px;
+  background-color: #adff2f;
+  margin-bottom: 10px;
+}
+
 .main-right nav ul li a{
   text-transform: uppercase;
 }
@@ -211,11 +238,11 @@ main {
   border-radius: 20px;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all ;
+  transition: all 1s linear;
 }
 
-.call-to-action .btn:hover a{
-  transform: scale(3);
+.call-to-action .btn:hover {
+  transform: scale(2);
 }
 /* / navbar */
 
@@ -369,7 +396,6 @@ footer {
 
 /* footer-center */
 .footer-center {
-  background-color: pink;
   flex-grow: 1;
   flex-shrink: 0;
   text-align: center;
