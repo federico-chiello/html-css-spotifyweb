@@ -127,7 +127,7 @@ main {
   font-size: 50px;
 }
 
-.main-left-header .playlist ul li {
+.main-left-header .playlist ul li{
   display: inline;
   vertical-align: middle;
 }
@@ -164,10 +164,19 @@ main {
 }
 
 .main-left-footer-bottom img {
-  width: 30px;
+  width: 25px;
+  height: 25px;
   background-color: lightgrey;
   border: 1px solid white;
   border-radius: 50px;
+  vertical-align: middle;
+}
+
+.main-left-footer-bottom h3 {
+  display: inline;
+  color: white;
+  padding-left: 5px;
+  vertical-align: middle;
 }
 /* / main-left-footer */
 /* / main-left */
@@ -228,21 +237,22 @@ main {
   background-color: rgba(5, 5, 5, 0.81);
   text-align: right;
   line-height: 80px;
-  padding-right: 20px;
+  padding-right: 30px;
 }
 
 .call-to-action .btn {
+  display: inline-block;
   color: white;
   padding: 10px 30px;
   border: 1px solid white;
   border-radius: 20px;
+  line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all 1s linear;
 }
 
 .call-to-action .btn:hover {
-  transform: scale(2);
+  transform: scale(1.1);
 }
 /* / navbar */
 
@@ -298,9 +308,7 @@ main {
 
 .covers #recently ul li .layover:hover i{
   display: block;
-  opacity: 1;
 }
-
 /* / recently */
 
 /* creato */
@@ -308,7 +316,7 @@ main {
   padding: 30px 0 0 20px;
 }
 
-.covers #creato .image img {
+.covers #creato img {
   width: 150px;
   height: 150px;
 }
@@ -324,6 +332,29 @@ main {
   margin: 15px 10px 0 0;
   text-align: center;
 }
+
+.covers #creato ul li .layover{
+  width: 100%;
+  position: relative;
+}
+
+.covers #creato ul li .layover:hover {
+  opacity: 0.5;
+}
+
+.covers #creato ul li .layover i{
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.covers #creato ul li .layover:hover i{
+  display: block;
+}
 /* / creato */
 
 /* artisti */
@@ -331,7 +362,7 @@ main {
   padding: 30px 0 0 20px;
 }
 
-.covers #artisti .image img {
+.covers #artisti img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -348,6 +379,29 @@ main {
   margin: 15px 10px 0 0;
   text-align: center;
 }
+
+.covers #artisti ul li .layover{
+  width: 100%;
+  position: relative;
+}
+
+.covers #artisti ul li .layover:hover {
+  opacity: 0.5;
+}
+
+.covers #artisti ul li .layover i{
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.covers #artisti ul li .layover:hover i{
+  display: block;
+}
 /* / artisti */
 /* / covers */
 /* / main-right */
@@ -361,6 +415,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* footer-left */
@@ -396,9 +451,12 @@ footer {
 
 /* footer-center */
 .footer-center {
-  flex-grow: 1;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-center ul {
@@ -419,7 +477,18 @@ footer {
   font-size: 30px;
 }
 
-.footer-center .first::after {
+.footer-center .barra .time{
+  display: inline;
+}
+
+.footer-center .barra-centrale {
+  height: 5px;
+  width: 350px;
+  background-color: #75787c;
+  border-radius: 5px;
+}
+
+/* .footer-center .first::after {
   content: '';
   display: inline-block;
   height: 4px;
@@ -427,7 +496,7 @@ footer {
   border-radius: 5px;
   background-color: #75787c;
   margin: 0 30px;
-}
+} */
 /* / footer-center */
 
 /* footer-right */
@@ -442,8 +511,8 @@ footer {
 }
 
 .footer-right .barra {
-  height: 1%;
-  width: 50px;
+  height: 5px;
+  width: 100px;
   background-color: #75787c;
   border-radius: 5px;
 }
@@ -500,6 +569,10 @@ footer {
     width: 20px;
     padding-bottom: 10px;
     margin: 0 5px;
+  }
+
+  .main-left-footer-bottom h3{
+    display: none;
   }
 
   .main-right {
