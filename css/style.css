@@ -452,6 +452,7 @@ footer {
 /* footer-center */
 .footer-center {
   flex-shrink: 0;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -505,24 +506,30 @@ footer {
   position: relative;
 }
 
-.footer-center .barra-centrale .barra-bianca i {
+.footer-center .barra-centrale .ball {
   position: absolute;
   top: -5px;
   right: 0;
   color: white;
-  display: none;
 }
 
 .footer-center .barra-centrale .barra-bianca:hover{
   background-color: #adff2f;
+  display: block;
 }
 
-
+.footer-center .barra-centrale .ball:hover {
+  display: none;
+}
 /* / footer-center */
 
 /* footer-right */
 .footer-right {
   flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .footer-right ul li {
   display: inline-block;
@@ -531,24 +538,87 @@ footer {
   vertical-align: middle;
 }
 
-.footer-right .barra {
+.footer-right .barra-laterale {
+  display: block;
   height: 5px;
   width: 100px;
   background-color: #75787c;
   border-radius: 5px;
+  margin-right: 10px;
 }
 
+.footer-right .barra-laterale .barra-bianca{
+  height: 5px;
+  width: 20px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+}
+
+.footer-right .barra-laterale .barra-bianca:hover{
+  background-color: #adff2f;
+  display: block;
+}
+
+.footer-right .barra-laterale .ball {
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  color: white;
+}
+
+.footer-right .barra-laterale .ball:hover {
+  display: none;
+}
 /* / footer-right */
 /* / footer */
 
 /* media query */
-@media screen and (min-width: 579px) {
+@media screen and (max-width: 900px){
+
+  .footer-left .brano {
+    margin: 15px 10px 0 0;
+  }
+
+  .footer-left .font a{
+    padding-right: 0;
+    display: inline-block;
+  }
+
+  .footer-center .barra-centrale {
+    width: 250px;
+  }
+
+  .footer-center .barra-centrale .barra-bianca{
+    width: 50px;
+  }
+
+  .footer-right .barra-laterale {
+    width: 70px;
+  }
+
+  .footer-right .barra-laterale .barra-bianca{
+    width: 10px;
+  }
+}
+
+@media screen and (max-width: 730px){
+  .footer-center .barra-centrale {
+    width: 180px;
+  }
+
+  .footer-right .barra-laterale {
+    width: 40px;
+  }
+}
+
+@media screen and (min-width: 679px) {
   .main-left-header .spotify .logo-small{
     display: none;
   }
 }
 
-@media screen and (max-width: 578px) {
+@media screen and (max-width: 678px) {
   .main-left {
     width: 60px;
   }
