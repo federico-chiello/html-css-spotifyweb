@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color:white;
+}
+
 li {
   list-style: none;
 }
@@ -72,10 +76,12 @@ main {
   padding-left: 15px;
 }
 
+.main-left ul li a {
+  opacity: 0.6;
+}
 
 .main-left li a:hover {
   opacity: 1;
-  color: white;
 }
 
 /* main-left-header */
@@ -101,6 +107,10 @@ main {
   padding-left: 15px;
 }
 
+.main-left-header .menu ul li:first-child a{
+  padding-left: 12px;
+}
+
 .main-left-header .menu ul li:first-child {
   border-left: 3px solid #adff2f;
 }
@@ -123,13 +133,23 @@ main {
 .main-left-header .playlist {
   padding-bottom: 20px;
 }
-.main-left-header .playlist i{
-  font-size: 50px;
+
+.main-left-header .playlist a span:before{
+  display: inline-block;
+  content:'+';
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  margin-right: 10px;
+  font-size: 36px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.66);
+  text-align: center;
+  vertical-align: middle;
 }
 
-.main-left-header .playlist ul li{
-  display: inline;
-  vertical-align: middle;
+.main-left-header .playlist a:hover span:before {
+  background-color: rgba(255, 255, 255, 1);
 }
 /* / main-left-header */
 
