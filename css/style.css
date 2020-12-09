@@ -312,7 +312,7 @@ main {
   position: relative;
 }
 
-.covers #recently ul li .layover:hover {
+.covers #recently ul li .layover:hover img{
   opacity: 0.5;
 }
 
@@ -359,7 +359,7 @@ main {
   position: relative;
 }
 
-.covers #creato ul li .layover:hover {
+.covers #creato ul li .layover:hover img{
   opacity: 0.5;
 }
 
@@ -406,7 +406,7 @@ main {
   position: relative;
 }
 
-.covers #artisti ul li .layover:hover {
+.covers #artisti ul li .layover:hover img{
   opacity: 0.5;
 }
 
@@ -512,11 +512,12 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .footer-center .barra-centrale {
   height: 5px;
-  width: 350px;
+  width: 40%;
   background-color: #75787c;
   border-radius: 5px;
   margin: 0 10px;
@@ -535,15 +536,16 @@ footer {
   top: -5px;
   right: 0;
   color: white;
+  display: none;
 }
 
-.footer-center .barra-centrale .barra-bianca:hover{
+.footer-center .barra-centrale .barra-bianca:hover {
   background-color: #adff2f;
   display: block;
 }
 
-.footer-center .barra-centrale .ball:hover {
-  display: none;
+.footer-center .barra-centrale .barra-bianca:hover .ball{
+  display: block;
 }
 /* / footer-center */
 
@@ -589,10 +591,11 @@ footer {
   top: -5px;
   left: 10px;
   color: white;
+  display: none;
 }
 
-.footer-right .barra-laterale .ball:hover {
-  display: none;
+.footer-right .barra-laterale .barra-bianca:hover .ball{
+  display: block;
 }
 /* / footer-right */
 /* / footer */
