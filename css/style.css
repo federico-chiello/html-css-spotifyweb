@@ -556,6 +556,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 180px;
 }
 
 .footer-right ul {
@@ -570,7 +571,8 @@ footer {
 }
 
 .footer-right .barra {
-  width: 100%;
+  width: 70%;
+  padding-right: 5px;
 }
 
 .footer-right .barra-laterale {
@@ -584,7 +586,7 @@ footer {
 
 .footer-right .barra-laterale .barra-bianca{
   height: 5px;
-  width: 30%;
+  width: 20%;
   background-color: white;
   border-radius: 5px;
   position: relative;
