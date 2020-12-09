@@ -441,23 +441,26 @@ footer {
 
 /* footer-left */
 .footer-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   flex-shrink: 0;
 }
 .footer-left img {
   width: 50px;
-  margin: 15px 10px;
+  margin: 0 10px;
 }
 
 .footer-left .brano {
-  margin: 15px 30px 0 0;
+  margin-right: 10px;
 }
 
 .footer-left .brano a:hover {
-  color: white;
+  text-decoration: underline;
 }
 
 .footer-left .font {
-  line-height: 80px;
   vertical-align: middle;
 }
 
