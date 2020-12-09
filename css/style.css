@@ -672,5 +672,24 @@ footer {
   .call-to-action {
     width: calc(100% - 60px);
   }
+
+  .footer-center ul li a{
+    padding-right: 10px;
+  }
+
+  .footer-left .font {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-left img {
+    width: 30px;
+  }
+
+  .footer-right .barra {
+    width: 30%;
+  }
 }
 /* / media query */
